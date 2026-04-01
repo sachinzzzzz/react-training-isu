@@ -1,0 +1,51 @@
+1. Introduction to React
+React is a library for building user interfaces using components. Unlike traditional JS, where you manually update the DOM, React updates the UI automatically when data changes. 
+Exercise: Write down three popular websites that use React (Hint: Think Meta products) and identify one "reusable" part on their homepage (like a search bar or a post card). 
+
+
+2. Setting Up React with Vite
+Vite is the modern, lightning-fast replacement for Create React App. 
+The Command:
+bash
+npm create vite@latest my-react-app -- --template react
+cd my-react-app
+npm install
+npm run dev
+Use code with caution.
+
+Exercise: Initialize a new project named practice-app, install the dependencies, and change the default "Vite + React" title in App.jsx to "Hello World." 
+
+
+3. Understanding the Folder Structure
+node_modules/: The heavy lifting (libraries).
+public/: Static assets (favicons).
+src/: Where you live.
+main.jsx: The entry point that "renders" the app.
+App.jsx: Your root component.
+index.html: The single page your app loads into.
+Exercise: Create a new folder inside src called components. create a component and load it from App.jsx.  Move a dummy file there to practice organizing your workspace. 
+
+
+4. JSX and Declarative UI
+JSX lets you write HTML-like code inside JavaScript. Declarative means you describe what the UI should look like, not how to change it step-by-step. 
+Example:
+jsx
+const name = "Alex";
+const element = <h1 className="title">Welcome, {name}!</h1>;
+Use code with caution.
+
+Exercise: Create a JSX element that displays the current year using a JavaScript new Date() object inside curly braces {}. 
+
+
+5. Your First Component
+A component is just a JavaScript function that returns JSX. Always start component names with a Capital Letter. 
+Example (Greeting.jsx):
+jsx
+function Greeting() {
+  return <p>Have a great day of coding!</p>;
+}
+export default Greeting;
+
+Use code with caution.
+
+Exercise: Create a component named Header. Inside it, return a <nav> tag with an unordered list of three links (Home, About, Contact). Import and use this Header inside your App.jsx. 

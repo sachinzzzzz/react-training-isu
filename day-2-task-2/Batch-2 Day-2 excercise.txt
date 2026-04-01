@@ -1,0 +1,21 @@
+1. Props & Ref PropProps are how you pass data from a parent to a child. 
+
+Exercise: Create a Button component that accepts a label and a color prop. Use the color prop to set the inline style backgroundColor.
+
+2. Managing State with useStateState allows a component to "remember" things (like text in an input or a counter value).
+
+Exercise: Create a "Toggle" component. It should show the word "ON" or "OFF". Clicking a button should switch the state between the two.
+
+Exercise: Create a state variable called text. Link it to an <input> so that whatever you type is mirrored instantly in a <p> tag below it.
+
+3. Event Handling & TransitionsEvent handling in React uses camelCase (e.g., onClick, onChange). Transitions (useTransition) 
+
+Exercise: Create a div that changes its background color to red on onMouseEnter and back to blue on onMouseLeave.
+
+4. Conditional RenderingDeciding what to show based on logic. 
+
+Exercise: Create a TrafficLight component. It receives a color prop ("red", "yellow", "green"). Use a switch statement or ternary to display a specific message for each (e.g., "Stop", "Slow Down", "Go").
+
+5. Lists & KeysWhen rendering a list of data, React needs a unique key for each item to track changes efficiently
+
+Exercise: Create an array of "Todo" objects, each with an id and a task string. Map through them to create a list. Also Try rendering a list using the index as a key, then try adding an item to the start of the array.
