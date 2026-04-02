@@ -1,0 +1,13 @@
+Exercise: 1
+
+Create a Card.module.css file with a .container class (border, shadow) and a .title class (bold, blue).
+Import styles into a Card.jsx component and apply these classes using className={styles.container}.
+Observe how the browser renames them to something like Card_container__hash123 to avoid conflicts.
+
+Exercise: 2
+Create a ThemeButton component that switches between "Light" and "Dark" modes.
+
+Step 1: Create ThemeButton.module.css with .base, .light, and .dark classes. 
+Use camelCase for class names.
+Step 2: In ThemeButton.jsx, use a useState hook to track the current theme.
+Step 3: Apply classes dynamically.
