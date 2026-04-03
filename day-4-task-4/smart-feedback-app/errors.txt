@@ -1,0 +1,3 @@
+src/App.tsx(4,40): error TS1484: 'Feedback' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/components/FeedbackForm.tsx(26,12): error TS6133: 'previousState' is declared but its value is never read.
+src/components/FeedbackList.tsx(1,10): error TS1484: 'Feedback' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
