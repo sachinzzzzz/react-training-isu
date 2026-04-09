@@ -1,61 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { use } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Building, MapPin, Phone, Globe, Briefcase, Mail } from 'lucide-react';
 
 const UserProfile = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    // Fetch specific user details
-    const fetchUserDetail = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
-        if (!response.ok) {
-          throw new Error('User not found');
-        }
-        const data = await response.json();
-        setUser(data);
-        setError(null);
-      } catch (err) {
-        setError('Could not load user profile details.');
-        console.error(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchUserDetail();
-  }, [id]);
-
-  if (loading) {
-    return (
-      <div className="loader-container page-transition">
-        <span className="spinner"></span>
-        <p>Loading Profile...</p>
-      </div>
-    );
-  }
-
-  if (error || !user) {
-    return (
-      <div className="container page-transition">
-        <div className="header-controls">
-          <button className="btn btn-secondary" onClick={() => navigate('/')}>
-            <ArrowLeft size={18} /> Back to Directory
-          </button>
-        </div>
-        <div className="error-container glass-panel fade-in" style={{ marginTop: '2rem' }}>
-          <h2>Profile Not Found</h2>
-          <p>{error}</p>
-        </div>
-      </div>
-    );
-  }
+  const user = use(
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .then(res => {
+        if (!res.ok) throw new Error('User not found');
+        return res.json();
+      })
+  );
 
   const initials = user.name
     .split(' ')
