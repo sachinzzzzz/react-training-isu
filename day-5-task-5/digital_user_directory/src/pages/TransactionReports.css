@@ -1,0 +1,283 @@
+.transaction-reports-container {
+  padding: 24px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+/* Filter Section */
+.filter-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.filter-label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Custom Radio Button styling for PNB Red ring matching design */
+.radio-label input[type="radio"] {
+  accent-color: #a61a2e;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.filter-subtext {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.filter-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.report-select {
+  padding: 10px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  width: 250px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.report-select:focus {
+  border-color: #a61a2e;
+}
+
+.submit-btn {
+  background-color: #a61a2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #8a1425;
+}
+
+/* Table Section */
+.table-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.search-container {
+  position: relative;
+  width: 280px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  border-color: #a61a2e;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #a61a2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #8a1425;
+}
+
+/* Table Styling */
+.table-responsive {
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.transaction-table th {
+  padding: 16px 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fafafa;
+}
+
+.sort-icon {
+  color: #ccc;
+  vertical-align: middle;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.transaction-table td {
+  padding: 20px 8px;
+  font-size: 13px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #e6f8ea; /* Light green background */
+  color: #2e7d32; /* Green text */
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Pagination Section */
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 24px;
+}
+
+.pagination-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pagination-text {
+  font-size: 13px;
+  color: #666;
+}
+
+.rows-select {
+  padding: 6px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  font-size: 13px;
+  outline: none;
+  color: #333;
+}
+
+.goto-input {
+  width: 40px;
+  padding: 6px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+  outline: none;
+}
+
+.pagination-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.page-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-btn:hover:not(.active) {
+  background-color: #f5f5f5;
+}
+
+.page-btn.active {
+  color: #a61a2e; /* PNB Red */
+  border-color: #a61a2e;
+  font-weight: 600;
+}
+
+.page-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  color: #ccc;
+}

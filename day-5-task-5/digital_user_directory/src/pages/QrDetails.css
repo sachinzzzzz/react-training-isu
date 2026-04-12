@@ -1,0 +1,233 @@
+.qr-details-container {
+  padding: 24px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+/* Filter Card */
+.qr-filter-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.qr-filter-label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.qr-radio-group {
+  display: flex;
+  gap: 24px;
+}
+
+.qr-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.qr-radio-label input[type="radio"] {
+  accent-color: #a61a2e;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.qr-text-active {
+  color: #333;
+  font-weight: 500;
+}
+
+.qr-text-muted {
+  color: #bbb;
+}
+
+/* Central QR Display Card */
+.qr-display-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 40px 24px;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+/* PNB Logo mock */
+.qr-header-logos {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.qr-pnb-logo-wrapper {
+  background-color: #ffcc00; /* Yellow */
+  border-radius: 6px;
+  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.qr-pnb-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qr-pnb-icon-u {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #a61a2e; /* Red U shape background mock */
+  border-radius: 4px;
+  /* Further detailing for the PNB U logo can be added if needed */
+}
+
+.qr-pnb-text {
+  color: #a61a2e;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+
+.qr-header-upi-text {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+/* Merchant Info */
+.qr-merchant-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.qr-merchant-avatar {
+  width: 28px;
+  height: 28px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-merchant-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* QR Code Image */
+.qr-code-wrapper {
+  margin-bottom: 16px;
+}
+
+.qr-image {
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+/* Footer elements */
+.qr-footer-upi-text {
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.qr-download-btn {
+  background-color: #8c1d35; /* Darker red from design */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: background-color 0.2s;
+}
+
+.qr-download-btn:hover {
+  background-color: #71172a;
+}
+
+/* Powered By section */
+.qr-powered-by {
+  text-align: center;
+}
+
+.qr-powered-text {
+  font-size: 10px;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+.qr-upi-logo-mark {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.qr-upi-u { color: #555; }
+.qr-upi-p { color: #555; }
+.qr-upi-i { color: #555; }
+
+.qr-upi-arrows {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.qr-upi-arrow-green {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #2e7d32;
+  margin-right: -4px;
+}
+
+.qr-upi-arrow-orange {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #e65100;
+}
+
+.qr-upi-subtext {
+  font-size: 8px;
+  color: #999;
+  display: block;
+}
